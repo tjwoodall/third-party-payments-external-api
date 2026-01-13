@@ -7,13 +7,7 @@ info:
     \ user we will offer this as a link to the customer to continue their journey.\n\
     \nAdditional details about the outcome of the payment can be discovered \nby the\
     \ API user by taking advantage of the /status endpoint.\n\nTypical lifetimes for\
-    \ journey storage are not yet determined.\n\n<div class=\"govuk-warning-text warning-icon-fix\"\
-    >\n  <span class=\"govuk-warning-text__icon warning-icon-ui-fix\" aria-hidden=\"\
-    true\">!</span>\n  <strong class=\"govuk-warning-text__text\">\n    <span class=\"\
-    govuk-warning-text__assistive\">Warning</span>\n    During this period if you\
-    \ wish to develop to this API please register your interest with SDST. We will\
-    \ update this page as soon as the API is available for general use.\n  </strong>\n\
-    </div>\n"
+    \ journey storage are not yet determined.\n"
   version: 1.0.3
 servers:
 - url: https://test-api.service.hmrc.gov.uk/payments/make-payment
