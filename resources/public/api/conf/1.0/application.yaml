@@ -22,7 +22,7 @@ servers:
 
 components:
   securitySchemes:
-    userRestricted:
+    User-Restricted:
       type: oauth2
       description: |
         HMRC supports OAuth 2.0 for authenticating user restricted API requests using an OAuth 2.0 Bearer Token in the AUTHORIZATION header.
@@ -34,7 +34,7 @@ components:
           refreshUrl: https://api.service.hmrc.gov.uk/oauth/refresh
           scopes:
             status: Update the status of fraud check
-    applicationRestricted:
+    Application-Restricted:
       type: oauth2
       description: |
         HMRC supports OAuth 2.0 for authenticating application restricted API requests using an OAuth 2.0 Bearer Token in the AUTHORIZATION header.
@@ -80,7 +80,7 @@ paths:
         then redirects the customer's browser to this URL, starting the payment journey.
 
       security:
-        - applicationRestricted: [ ]
+        - Application-Restricted: [ ]
       requestBody:
         description: |
           The request body always contains the fields that allow HMRC to identify the liability that is being paid, so 
@@ -198,7 +198,7 @@ paths:
         | IN_PROGRESS                      | The payment is in progress but has not completed or failed. |
 
       security:
-        - applicationRestricted: [ ]
+        - Application-Restricted: [ ]
 
       parameters:
         - in: query
