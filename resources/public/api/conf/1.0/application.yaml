@@ -15,9 +15,9 @@ info:
     Typical lifetimes for journey storage are not yet determined.
 
 servers:
-  - url: https://test-api.service.hmrc.gov.uk/payments/make-payment
+  - url: https://test-api.service.hmrc.gov.uk
     description: Sandbox
-  - url: https://api.service.hmrc.gov.uk/payments/make-payment
+  - url: https://api.service.hmrc.gov.uk
     description: Production
 
 components:
@@ -72,7 +72,7 @@ components:
       required: true
 
 paths:
-  /pay:
+  /payments/make-payment/pay:
     post:
       summary: Begin a payment journey.
       description: |
@@ -178,7 +178,7 @@ paths:
               example:
                 { "errors": ["Error from upstream"] }
 
-  /status:
+  /payments/make-payment/status:
     get:
       summary: Discover the status of a payment.
       description: |
